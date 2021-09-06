@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* .body_container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.topnav {
+  display: flex;
+  width: 100vw;
+  height: 9vh;
+  background-color: #fff;
+  margin-bottom: 2%;
+  border: 1px solid #dbdbdb;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  height: 9%;
+  /* margin-top: -.5%; */
+  margin-left: -27%;
+  position: fixed;
+}
+
+.search {
+  /* margin-right: 11%;
+  margin-left: 10%; */
+  position: fixed;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search_icon {
+  color: #8e8e8e;
+  position: absolute;
+  width: 10%;
+  font-size: 11px;
+  top: 16%;
+  left: 26%;
+}
+
+#search {
+  padding-top: 3px;
+  padding-bottom: 8px;
+  display: flex;
+  text-align: center;
+  background-color: #fafafa;
+  border: none;
+  /* border: 1px solid #dbdbdb; */
+  width: 145%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40%;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+#home {
+  height: 29px;
+  position: fixed;
+}
+
+.dms {
+  display: flex;
+  align-items: center;
+}
+
+#dms {
+  height: 29px;
+  margin-left: 1.5%;
+  position: fixed;
+}
+
+.follow {
+  display: flex;
+  align-items: center;
+}
+
+#follow {
+  height: 29px;
+  margin-left: 3%;
+  position: fixed;
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+}
+
+#notifications {
+  height: 29px;
+  margin-left: 4.5%;
+  position: fixed;
+}
+
+#notification {
+  /* display: none; */
+  height: 29px;
+  margin-left: 4.5%;
+  position: fixed;
+}
+
+#dropdown_content {
+  display: none;
+  background-color: #fff;
+  width: 32%;
+  height: 34%;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  top: 8%;
+  right: 7%;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  position: fixed;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.dropdown {
+  font-size: 14px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+#profile {
+  height: 29px;
+  margin-left: 6%;
+  position: fixed;
+  color: #dbdbdb;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.stories {
+  top: 13%;
+  background-color: #fff;
+  width: 48%;
+  height: 15%;
+  border-radius: 6px;
+  border-width: 2px;
+  display: flex;
+  border: 1px solid #dbdbdb;
+  /* margin-top: -49%; */
+  position: absolute;
+}
+
+.news_feed {
+  margin-right: 21%;
+}
+
+.postContainer {
+  width: 49vw;
+  /* height: 64.5vh; */
+  display: flex;
+  justify-content: center;
+  margin-right: 21px;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.feed_card {
+  background-color: #fff;
+  width: 98%;
+  min-height: 58%;
+  height: 267px;
+  border-radius: 6px;
+  border-width: 2px;
+  display: flex;
+  border: 1px solid #dbdbdb;
+  margin-top: 3%;
+  /* position: absolute; */
+  flex-direction: column;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.user_icon {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+.username {
+  font-size: 14px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
+}
+
+.post {
+  border: 1px solid #dbdbdb;
+  margin-left: 3%;
+  width: 94%;
+  height: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post_content {
+  font-size: 20px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  margin-left: 3%;
+}
+
+.reactions {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+#react {
+  height: 29px;
+  margin-right: 3%;
+}
+
+#dm {
+  height: 29px;
+  margin-right: 3%;
+}
+
+#post_content.active {
+  display: flex;
+}
+
+.delete {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#delete {
+  width: 32px;
+  position: fixed;
+  right: 6%;
+  z-index: 1;
+  top: 2%;
+}
+
+#post_content {
+  display: none;
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.post_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 17%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.post_icon {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+.post_username {
+  font-size: 14px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
+}
+
+.post_post {
+  border: 1px solid #dbdbdb;
+  margin-left: 17%;
+  width: 65%;
+  height: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post_post_content {
+  font-size: 20px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  margin-left: 3%;
+}
+
+.post_reactions {
+  display: flex;
+  flex-direction: row;
+  margin-left: 17%;
+  margin-top: 2%;
+}
+
+#post_react {
+  height: 29px;
+  margin-right: 3%;
+}
+
+#post_dm {
+  height: 29px;
+  margin-right: 3%;
+}
+
+.bottom_comments {
+  width: 50%;
+  /* background-color: #dbdbdb; */
+  display: flex;
+  height: 51%;
+  margin-top: 7%;
+  margin-left: 17%;
+  flex-direction: column;
+}
+
+.comments {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.user_name {
+  font-size: 14px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 600;
+  width: 57%;
+  margin-left: 3%;
+}
+
+.user_comment {
+  font-size: 14px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+}
+
+.content {
+  /* z-index: 1; */
+  background-color: #fff;
+  width: 70%;
+  height: 85%;
+  border-radius: 6px;
+  border-width: 2px;
+  display: flex;
+  border: 1px solid #dbdbdb;
+  position: fixed;
+  flex-direction: column;
+  top: 12%;
+  left: 15%;
+}
+
+.sidenav {
+  display: flex;
+  width: 20vw;
+  height: 83.5vh;
+  background-color: #fff;
+  position: fixed;
+  right: 15%;
+  top: 13%;
+}

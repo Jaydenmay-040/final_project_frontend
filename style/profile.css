@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+  
+  /* .body_container {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+.topnav {
+    display: flex;
+    width: 100vw;
+    height: 9vh;
+    background-color: #fff;
+    margin-bottom: 2%;
+    border: 1px solid #dbdbdb;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+  
+.logo {
+    height: 9%;
+    /* margin-top: -.5%; */
+    margin-left: -27%;
+    position: fixed;
+}
+  
+.search {
+    /* margin-right: 11%;
+    margin-left: 10%; */
+    position: fixed;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+#search_icon {
+    color: #8e8e8e;
+    position: absolute;
+    width: 10%;
+    font-size: 11px;
+    top: 16%;
+    left: 26%;
+}
+  
+#search {
+    padding-top: 3px;
+    padding-bottom: 8px;
+    display: flex;
+    text-align: center;
+    background-color: #fafafa;
+    border: none;
+    /* border: 1px solid #dbdbdb; */
+    width: 145%;
+}
+  
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    align-items: center;
+}
+  
+.home {
+    display: flex;
+    align-items: center;
+}
+  
+#home {
+    height: 29px;
+    position: fixed;
+}
+  
+.dms {
+    display: flex;
+    align-items: center;
+}
+  
+#dms {
+    height: 29px;
+    margin-left: 1.5%;
+    position: fixed;
+}
+  
+.follow {
+    display: flex;
+    align-items: center;
+}
+  
+#follow {
+    height: 29px;
+    margin-left: 3%;
+    position: fixed;
+}
+  
+.notifications {
+    display: flex;
+    align-items: center;
+}
+  
+#notifications {
+    height: 29px;
+    margin-left: 4.5%;
+    position: fixed;
+}
+
+#notification {
+    /* display: none; */
+    height: 29px;
+    margin-left: 4.5%;
+    position: fixed;
+}
+
+#dropdown_content {
+    display: none;
+    background-color: #fff;
+    width: 32%;
+    height: 34%;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    top: 8%;
+    right: 7%;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    position: fixed;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.dropdown {
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+  
+.profile {
+    display: flex;
+    align-items: center;
+}
+  
+#profile {
+    height: 29px;
+    margin-left: 6%;
+    position: fixed;
+    color: #dbdbdb;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.profile_container {
+    display: flex;
+    background-color: #fff;
+    width: 71%;
+    height: 85%;
+    position: fixed;
+    top: 12%;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    margin-left: 14%;
+    margin-top: 3%;
+    width: 100%;
+    height: 27%;
+    margin-bottom: 4%;
+}
+
+.profile_img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    /* margin-left: 20%; */
+    margin-bottom: 2%;
+}
+
+.right {
+    display: flex;
+    margin-left: 11%;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2%;
+    font-weight: 100;
+    margin-bottom: 13%;
+}
+
+.row_two {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 13%;
+}
+
+#post {
+    margin-right: 30%;
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+}
+
+#followers {
+    margin-right: 30%;
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+}
+
+#following {
+    margin-right: 30%;
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+}
+
+.bio {
+    margin-right: 30%;
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+}
+
+hr {
+    width: 83%;
+    margin-left: 8%;
+}
+
+.profile_content {
+    /* background-color: green; */
+    width: 83%;
+    height: 55%;
+    margin-left: 8%;
+    margin-top: 3%;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.profile_content::-webkit-scrollbar {
+    display: none;
+  }

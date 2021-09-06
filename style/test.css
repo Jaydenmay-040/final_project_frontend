@@ -1,0 +1,168 @@
+.post_content {
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+    margin-left: 3%;
+  }
+  
+  .reactions {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+  
+  #react {
+    height: 29px;
+    margin-right: 3%;
+  }
+  
+  #dm {
+    height: 29px;
+    margin-right: 3%;
+  }
+  
+  #post_content.active {
+    display: flex;
+  }
+  
+  .delete {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #delete {
+    width: 32px;
+    position: fixed;
+    right: 6%;
+    z-index: 1;
+    top: 2%;
+  }
+  
+  #post_content {
+    /* display: none; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+  
+  .post_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 17%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .post_icon {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 2%;
+  }
+  
+  .post_username {
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+  }
+  
+  .post_post {
+    border: 1px solid #dbdbdb;
+    margin-left: 17%;
+    width: 65%;
+    height: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .post_post_content {
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+    margin-left: 3%;
+  }
+  
+  .post_reactions {
+    display: flex;
+    flex-direction: row;
+    margin-left: 17%;
+    margin-top: 2%;
+  }
+  
+  #post_react {
+    height: 29px;
+    margin-right: 3%;
+  }
+  
+  #post_dm {
+    height: 29px;
+    margin-right: 3%;
+  }
+  
+  .bottom_comments {
+    width: 65%;
+    background-color: #dbdbdb;
+    display: flex;
+    height: 51%;
+    margin-top: 7%;
+    margin-left: 17%;
+    flex-direction: column;
+  }
+  
+  .comments {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+    margin-top: 2%;
+  }
+  
+  .user_img {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-left: 6%;
+  }
+  
+  .user_name {
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+    width: 57%;
+    margin-left: 3%;
+  }
+  
+  .user_comment {
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+  }
+
+  .content {
+    /* z-index: 1; */
+    background-color: #fff;
+    width: 70%;
+    height: 85%;
+    border-radius: 6px;
+    border-width: 2px;
+    display: flex;
+    border: 1px solid #dbdbdb;
+    position: fixed;
+    flex-direction: column;
+    top: 12%;
+    left: 15%;
+  }
